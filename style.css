@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-content {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: grey;
+}
+footer{
+    width: 100%;
+    background-color: #2a2a2c;
+}
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+.about{
+    width: 40%;
+}
+.section-1 h2{
+    font-size: 25px;
+    color: white;
+}
+.about p{
+    text-align: justify;
+    color: grey;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.section-1 ul{
+    list-style: none;
+}
+.section-1 ul li {
+    padding: 5px;
+}
+.section-1 ul li a{
+    text-decoration: none;
+    color: grey;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.section-1 ul li a:hover{
+    color: orange;
+}
+i {
+    color: grey;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.section-2 p{
+    color: grey;
+    font-size: 25px;
+}
+.section-2 a{
+    padding: 10px 25px;
+    color: white;
+    background-color: red;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.section-2 a:hover {
+    background-color: orange;
+}
+.section-3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.section-3 ul {
+    list-style: none;
+}
+.section-3 ul li {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    background-color: #424242;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.section-3 ul li i {
+    color: white;
+    font-size: 34px;
+    line-height: 20px;
+    text-align: center;
+}
+.section-3 ul li:nth-child(1):hover {
+    background-color: #3b5999;
+}
+.section-3 ul li:nth-child(2):hover {
+    background-color: yellowgreen;
+}
+.section-3 ul li:nth-child(3):hover {
+    background-color: #dd4b39;
+}
+.section-3 ul li:nth-child(4):hover {
+    background-color: #0077b5;
+}
+.section-3 ul li:nth-child(5):hover {
+    background-color: #ea4c89;
+}
+.section-4 {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 30px;
+}
+.section-4 p {
+    color: grey;
+    position: relative;
+}
+
+.section-4 p::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: all 0.3s;
+}
+.section-4 p:hover::after {
+    width: 100%;
+}
+@media(max-width:767px){
+    .section-1{
+        flex-wrap: wrap;
+    }
+    .about{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:499px){
+    .section-1{
+        flex-direction: column;
+    }
+    .about{
+        width: 100%;
+    }
+    .section-1 h2{
+        margin-top: 20px;
+    }
+    .section-3 ul li{
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    .section-3 ul li i {
+        font-size: 24px;
+    }
+}
